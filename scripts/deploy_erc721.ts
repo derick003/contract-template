@@ -16,7 +16,7 @@ async function main() {
   const contracts = readJson(path)
 
   await run("verify:verify", {
-    address: contracts.templateErc20.address,
+    address: contracts.templateErc721.address,
     constructorArguments: [
       erc721Args.name,
       erc721Args.symbol,
